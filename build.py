@@ -5,7 +5,7 @@ import illustrations
 from articles import ARTICLES
 from legal import LEGAL
 ROOT=Path(__file__).parent; OUT=ROOT/'dist'
-BASE='https://lean4knowledge.smartdrake67.chatgpt.site'
+BASE='https://lean4knowledge.com'
 SLUGS=['dependent-types','higher-order-logic','semantic-stack','graph-foundations','trust-boundary']
 for a,s in zip(ARTICLES,SLUGS):a['slug']=s
 BOOK='https://leanpub.com/bulletproofknowledge-aiagents'
@@ -90,4 +90,6 @@ page('404','Page not found','Find your way back to Lean 4 Knowledge.',ph('404','
 (OUT/'404.html').write_text((OUT/'404/index.html').read_text());(OUT/'404/index.html').unlink();(OUT/'404').rmdir();PAGES.remove('/404/')
 (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{BASE}{p}</loc></url>' for p in PAGES)+'</urlset>')
 (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n')
+(OUT/'CNAME').write_text('lean4knowledge.com\n')
+(OUT/'.nojekyll').touch()
 print(f'Built {len(PAGES)} pages plus 404 into {OUT}')

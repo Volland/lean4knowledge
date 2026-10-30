@@ -36,3 +36,11 @@ Checked 30 October 2026. Original explanatory text and SVG diagrams were created
 - https://www.w3.org/TR/shacl/
 
 The stack map synthesizes responsibilities. TypeDB and LadybugDB are alternative storage paths, not proven automatic integrations with LeanRDF. No benchmark claims or blanket claims of real-world truth are made.
+
+## GitHub Pages hosting correction
+
+- https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages — official Pages build/deploy actions
+- https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages — hosting and IP-address collection
+- https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement — providers, transfers, retention
+
+Production origin corrected to lean4knowledge.com. The GitHub remote is Volland/lean4knowledge. DNS is managed separately.

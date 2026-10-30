@@ -31,11 +31,17 @@ No application analytics, cookies, local storage, external font loads, embedded 
 
 Internal link/fragment/asset checks, primary headings, image alternatives, JavaScript syntax, and 35 external URL checks. Local Chrome QA covered desktop/tablet/mobile overflow, images, stack selector, filters/search/empty state, lesson accordions, and mobile menu. Browser tools live only under /tmp/lean4-qa.
 
-## Publication
+## GitHub Pages deployment
 
-Sites registration is private; identity is in `.openai/hosting.json`. No custom domain or DNS was changed. For another origin, update `BASE` and hosting-specific privacy text, then rebuild.
+The production origin is `https://lean4knowledge.com`. The build generates `dist/CNAME`, `.nojekyll`, canonical links, social image URLs, and a sitemap for that domain.
 
-The privacy page is a preview draft. Confirm final hosting entities, processor terms, retention, and international transfers before public operation. Provider details and B2B terms were adapted from the author's public legal pages; obsolete EU ODR wording was removed. This is not certification of legal compliance.
+`.github/workflows/pages.yml` builds and checks the site, then uploads `dist/` and deploys it with GitHub Pages. It runs on pushes to `main` and can also be started manually. Put this project directory's contents at the root of the hosting repository so GitHub discovers the workflow.
+
+In the hosting repository, select **Settings → Pages → Source → GitHub Actions**. Set the custom domain to `lean4knowledge.com` and retain/configure its GitHub Pages DNS records. The workflow does not change DNS or the repository's custom-domain setting. Custom Actions deployments require the domain in repository settings; the generated CNAME also supports branch-based hosting.
+
+The GitHub repository is https://github.com/Volland/lean4knowledge. The `origin` remote uses `git@github.com:Volland/lean4knowledge.git`. The earlier private Sites deployment is separate; its `.openai/hosting.json` is retained only as historical deployment metadata, and GitHub Pages does not use it.
+
+The privacy notice now describes GitHub Pages, using the author's original notice and GitHub's published privacy documentation. It contains no private-preview hosting placeholders. It does not assert an unverified processing agreement or fixed log retention period.
 
 Amazon US uses the supplied ASIN at https://www.amazon.com/dp/B0HPH5JJZF. Its URL responds, but retailer challenge content prevents independent verification of US availability.
 
