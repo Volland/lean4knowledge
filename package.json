@@ -1,0 +1,1 @@
+{"name":"lean4knowledge","private":true,"version":"1.0.0","scripts":{"build":"python3 build.py","dev":"python3 -m http.server 4173 --directory dist","check":"python3 check.py"}}
