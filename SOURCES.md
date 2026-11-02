@@ -17,6 +17,8 @@ Checked 30 October 2026. Original explanatory text and SVG diagrams were created
 - https://leanpub.com/ladybugdb — related book
 - https://www.amazon.com/dp/B0HPH5JJZF — user-supplied ASIN, US storefront
 - https://little-elpier.org/ — The Little Elpier: title, subtitle, CC BY 4.0 open access, chapter list (checked 2 November 2026)
+- https://little-elpier.org/assets/cover-360.jpg — The Little Elpier cover, hosted locally as little-elpier.jpg
+- https://leanpub.com/logic4agenticai — Logic for Agents: Building Neurosymbolic AI with Elpi; title, subject, cover (hosted locally as logic-for-agents.jpg)
 - https://consumer-redress.ec.europa.eu/site-relocation_en — EU ODR discontinued July 2025
 
 ## Project sources
