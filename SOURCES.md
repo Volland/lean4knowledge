@@ -16,6 +16,7 @@ Checked 30 October 2026. Original explanatory text and SVG diagrams were created
 - https://leanpub.com/typedbforedgeaiagents — related book
 - https://leanpub.com/ladybugdb — related book
 - https://www.amazon.com/dp/B0HPH5JJZF — user-supplied ASIN, US storefront
+- https://little-elpier.org/ — The Little Elpier: title, subtitle, CC BY 4.0 open access, chapter list (checked 2 November 2026)
 - https://consumer-redress.ec.europa.eu/site-relocation_en — EU ODR discontinued July 2025
 
 ## Project sources
